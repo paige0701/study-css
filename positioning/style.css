@@ -1,0 +1,40 @@
+.child-one {
+    background-color: red;
+
+    /*acts same as static but can change top left right bottom*/
+    position:relative;
+    left:10px;
+    top:10px;
+    /*usually not used like this */
+
+}
+.child-two {
+    background-color: blue;
+
+    /*especially useful when you want to stick item to a special position and
+    anything other to move around it*/
+    position: absolute;
+
+    top:10px;
+    /*top 10px 를 한다는 것은 이 엘리먼터의 페런트에서 부터 시작하는데
+    이 패런트의 포지션이 static 이면 안된다.
+
+     뭔가 absolute positioning, 어떤 엘리먼트를 어딘가에 위치하고 싶다면 기준점인 (parent) 의
+     포지션이 static 이 아니어야 한다.  absolute or relative 사용..
+    */
+
+
+}
+.child-three {
+    background-color: green;
+
+    /*fixed는 스크롤해서 그 자리에 고정되어있다. 그리고 포지션 기준이 전체 html이다. parent 가 아님*/
+    position: fixed;
+    top:0;
+    right:0
+}
+.parent {
+    background-color: pink;
+    position: relative;
+    height: 200vh
+}
