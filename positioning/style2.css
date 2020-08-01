@@ -1,0 +1,70 @@
+.section-1 {
+    width:100%;
+    height: 300px;
+    background-color: gainsboro;
+    /*padding-top: 100px;*/
+}
+
+.move-me3 {
+    width: 100px;
+    height: 100px;
+    background-color: darkmagenta;
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+
+.section-2 {
+    width: 50%;
+    height: 1400px;
+    background-color: bisque;
+}
+
+.move-me {
+    width: 100px;
+    height: 100px;
+    background-color: #66CCFF;
+
+    /*relative 는 현재 있는 위치를 기준으로 움직인다.
+    즉 현재 태그가 move-me2아래에 있으니 move-me2 아래에서
+    부터 top 100px 가 적용된다.
+    */
+    position: relative;
+    top: 100px
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: palevioletred;
+    position: fixed;
+    top: 0;
+}
+
+.move-me2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    /*포지션 absolute 는 relative 와 다르게 자기가 있는
+    위치와 상관 없이 html 전체가 기준이 된다. */
+    position: absolute;
+    top: 100px;
+    left:100px;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section-2-nav {
+    width: 100%;
+    height: 100px;
+    background-color: slateblue;
+    position: sticky;
+    top:0
+}
