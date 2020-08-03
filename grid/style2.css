@@ -1,0 +1,33 @@
+.wrapper {
+    display: grid;
+
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(4, 1fr 2fr);
+    grid-gap: 1em;
+
+    /*grid-auto-rows: 100px*/
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.nested {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 90px;
+    grid-gap:1em;
+    [addo]
+}
+
+.wrapper > div {
+    background-color: bisque;
+    padding: 1em;
+}
+
+.wrapper > div:nth-child(odd) {
+    background-color: #66CCFF;
+}
+
+.nested > div {
+    border: 1px solid red;
+    padding: 1em;
+}
+
