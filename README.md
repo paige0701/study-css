@@ -1,2 +1,16 @@
-# study-css
-layouts, positioning, grid, flexbox, media queries, responsive websites, best practices
+# Study basics of CSS
+
+- basic layouts
+- grids
+- forms
+- flex box
+- media-quries
+- responsive css
+- positioning
+
+<hr/>
+
+### eventually
+
+- SASS
+- publishing (psd > html)
