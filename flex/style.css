@@ -1,0 +1,59 @@
+
+/*making responsive*/
+@media(min-width: 468px) {
+    .container-1 {
+        display: flex;
+
+        align-items: flex-start;
+
+        /*flex-direction: column;*/
+    }
+
+    .container-2 {
+        display: flex;
+
+        /*justify-content: flex-start*/
+        justify-content: space-between;
+    }
+
+}
+
+.container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-1 div, .container-2 div, .container-3 div{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+.box-1 {
+
+    /*box size 같은 것 */
+    flex: 1;
+
+    /*tag 순서 관계 없이 순서를 이동할 수 있다니*/
+    order: 2
+}
+
+.box-2 {
+    flex: 1;
+    order: 3
+}
+
+.box-3 {
+    flex: 2;
+    order: 1
+}
+
+.container-2-box {
+    /*width: 30%;*/
+    flex-basis: 27%
+}
+
+.container-3-box {
+    flex-basis: 15%;
+}
