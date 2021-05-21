@@ -1,14 +1,30 @@
-.wrapper {
+.grid {
     display: grid;
-    grid-template-columns: 40% 30% 30%;
-    grid-gap: 1em;
+    grid-template-columns: auto 200px;
+    grid-template-rows: 100px repeat(2, 200px) 100px;
+    grid-template-areas:
+            "header header header header"
+    "content content content nav"
+    "content content content nav"
+    "footer footer footer footer"
 }
 
-.wrapper > div{
-    background-color: #eee;
-    padding: 1em
+.header {
+    background-color: #555555;
+    grid-area: header
 }
 
-.wrapper > div:nth-child(odd) {
-    background-color: #ddd;
+.content {
+    background-color: bisque;
+    grid-area: content;
+}
+
+.nav {
+    background-color: #88ee44;
+    grid-area: nav
+}
+
+.footer {
+    background-color: cadetblue;
+    grid-area: footer
 }
