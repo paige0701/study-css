@@ -1,32 +1,37 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(4, 100px) ;
+    /*grid-template-columns: repeat(4, 1fr);*/
+
+    /*this doesnt work if .grid does not have height!!*/
+    /*grid-template-rows: repeat(4, 1fr) ;*/
+
+    /*50% of viewport*/
+    height: 50vh;
+
+    /*여기서 첫번째 값은 height, 두번쨰 값은 각 컬럼의 width 를 지정할 수 있다.*/
+    grid-template:
+        "header header header header" 1fr
+    "content content content nav" 2fr
+    "footer footer footer footer" 1fr / 2fr 3fr 1fr 2fr
 
 }
 
 .header {
     background-color: #555555;
-
-    /*grid-column-start, end 의 shortcut*/
-    grid-column: 1/-1;
+    grid-area: header
 }
 
 .content {
     background-color: bisque;
-
-    grid-column: 1/-2;
-    grid-row: 2/-2;
+    grid-area: content
 }
 
 .nav {
     background-color: #88ee44;
-    grid-row: span 2;
+    grid-area: nav
 }
 
 .footer {
     background-color: cadetblue;
-
-    /*use span to tell how many columns to use*/
-    grid-column: span 4;
+    grid-area: footer
 }
