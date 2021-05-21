@@ -8,28 +8,25 @@
 .header {
     background-color: #555555;
 
-    /*여기서 숫자가 어떤 의미인지 확인하기*/
-    grid-column-start: 1;
-    grid-column-end: 5;
+    /*grid-column-start, end 의 shortcut*/
+    grid-column: 1/-1;
 }
 
 .content {
     background-color: bisque;
 
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    grid-column: 1/-2;
+    grid-row: 2/-2;
 }
 
 .nav {
     background-color: #88ee44;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row: span 2;
 }
 
 .footer {
     background-color: cadetblue;
-    grid-column-start: 1;
-    grid-column-end: 5;
+
+    /*use span to tell how many columns to use*/
+    grid-column: span 4;
 }
