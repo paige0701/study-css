@@ -1,17 +1,16 @@
 .grid {
     display: grid;
     gap: 5px;
-    height: 50vh;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    height: 250vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
 
+    /*this is moving the whole grid!!*/
+    /*justify-content: center;*/
+    /*align-content: end;*/
 
-    /*stretch is default value - this works when children does not have width and height*/
-    /*align-items: stretch;*/
-    /*justify-items: stretch;*/
-
-    /*this is shortcut to align-items &  justify-items*/
-    place-items: center end;
+    /*short cut for align-content / justify-content*/
+    place-content: end center
 }
 
 .header {
