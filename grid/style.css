@@ -1,16 +1,11 @@
 .grid {
     display: grid;
     gap: 5px;
-    height: 250vh;
-    grid-template-columns: repeat(4, 100px);
+    height: 50vh;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
     grid-template-rows: repeat(4, 100px);
 
-    /*this is moving the whole grid!!*/
-    /*justify-content: center;*/
-    /*align-content: end;*/
-
-    /*short cut for align-content / justify-content*/
-    place-content: end center
+    grid-auto-rows: 100px;
 }
 
 .header {
@@ -28,3 +23,12 @@
 .footer {
     background-color: cadetblue;
 }
+
+.item:nth-child(odd) {
+    background-color: silver;
+}
+
+.item:nth-child(even) {
+    background-color: navajowhite;
+}
+
